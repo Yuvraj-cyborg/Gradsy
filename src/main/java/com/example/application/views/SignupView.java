@@ -24,7 +24,7 @@ import com.vaadin.flow.server.auth.AnonymousAllowed;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Route("signup")
-@PageTitle("Sign Up | Gradst")
+@PageTitle("Sign Up | Gradsy")
 @AnonymousAllowed
 public class SignupView extends VerticalLayout {
 

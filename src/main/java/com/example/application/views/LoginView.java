@@ -28,7 +28,7 @@ public class LoginView extends VerticalLayout implements BeforeEnterObserver {
 
 		RouterLink signupLink = new RouterLink("Don't have an account? Sign up", SignupView.class);
 
-		add(new H1("gradst"), 
+		add(new H1("gradsy"), 
 			new Span("Please sign in to continue."), 
 			login,
 			signupLink
