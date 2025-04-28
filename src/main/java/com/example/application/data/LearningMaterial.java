@@ -106,12 +106,10 @@ public class LearningMaterial {
     }
 
     public boolean isPresent() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isPresent'");
     }
 
     public LearningMaterial get() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'get'");
     }
 }

@@ -72,31 +72,25 @@ public class LearningMaterialService {
             Path targetLocation = fileStorageLocation.resolve(uniqueFileName);
 
             try {
-                // If updating, delete the old file first
                 if (material.getId() != null && material.getFilePath() != null) {
                     try {
                          Files.deleteIfExists(fileStorageLocation.resolve(material.getFilePath()));
                     } catch (IOException ex) {
                         System.err.println("Could not delete old file: " + material.getFilePath() + " - " + ex.getMessage());
-                        // Log or handle error, but proceed with saving new file
                     }
                 }
 
-                // Copy the new file
                 Files.copy(inputStream, targetLocation);
                 material.setFilePath(uniqueFileName);
             } catch (IOException ex) {
-                // Clean up partially created file if copy fails?
                 throw new RuntimeException("Could not store file " + uniqueFileName, ex);
             } finally {
                  try { inputStream.close(); } catch (IOException e) { /* ignore close exception */ }
             }
         } else if (material.getId() == null) {
-             // If creating new material *without* a file, ensure filePath is null
              material.setFilePath(null);
         }
-        // Note: If updating existing material *without* providing a new file stream,
-        // we intentionally do NOT nullify the existing filePath.
+
 
         material.setUploadedBy(uploader);
         material.setUpdatedAt(LocalDateTime.now());
@@ -109,7 +103,6 @@ public class LearningMaterialService {
             try {
                 Files.deleteIfExists(fileStorageLocation.resolve(material.getFilePath()));
             } catch (IOException ex) {
-                // Log error but continue with DB deletion
                 System.err.println("Error deleting file: " + ex.getMessage());
             }
             learningMaterialRepository.deleteById(id);

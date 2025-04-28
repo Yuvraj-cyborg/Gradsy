@@ -24,7 +24,7 @@ public class QuizService {
     
     public List<Quiz> findActiveQuizzes(String subject) {
         if (subject == null || subject.trim().isEmpty() || subject.equals("All Subjects")) {
-            return quizRepository.findByIsActiveTrue(); // Fetch all active if no subject or 'All'
+            return quizRepository.findByIsActiveTrue(); 
         } else {
             return quizRepository.findActiveQuizzesBySubject(subject);
         }
@@ -55,7 +55,6 @@ public class QuizService {
         quizRepository.deleteById(id);
     }
     
-    // Quiz Attempt methods
     public QuizAttempt startQuizAttempt(Quiz quiz, User student) {
         QuizAttempt attempt = new QuizAttempt();
         attempt.setQuiz(quiz);
@@ -117,10 +116,9 @@ public class QuizService {
         return quizAttemptRepository.existsByQuizAndStudentAndCompletedTrue(quiz, student);
     }
 
-    // Find active quizzes, optionally filtered by subject
     public List<Quiz> findActiveQuizzesBySubject(String subject) {
         if (subject == null || subject.trim().isEmpty() || subject.equals("All Subjects")) {
-            return quizRepository.findByIsActiveTrue(); // Fetch all active if no subject or 'All' selected
+            return quizRepository.findByIsActiveTrue(); 
         } else {
             return quizRepository.findActiveQuizzesBySubject(subject);
         }
