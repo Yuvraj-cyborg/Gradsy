@@ -1,0 +1,504 @@
+2025-04-28 23:05:46.631418+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.636418+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.639422+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.642417+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.643417+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.645420+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:46.646422+05:30 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.079865+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.081863+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.082865+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.085866+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.087864+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.092865+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:05:54.095865+05:30 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.515167+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.518212+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.520176+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.521175+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.523174+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.525176+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:32:19.526214+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.205071+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.207072+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.209071+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.211071+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.213074+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.215072+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:31.217073+05:30 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.781572+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.782568+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.783569+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.785574+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.786570+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.788574+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:33:47.789573+05:30 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.334752+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.336752+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.338754+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.340750+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.342756+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.344751+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:34:02.345751+05:30 jdbc[43]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.130663+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.132666+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.133668+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.136665+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.138663+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.143661+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:35:29.147663+05:30 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.239016+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.240016+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.241016+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.243011+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.245011+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.246013+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:11.247012+05:30 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.938995+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.939996+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.940999+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.942024+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.942997+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.944997+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:38:17.945995+05:30 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.064376+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.065572+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.066580+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.067580+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.068586+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.071580+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:05.072581+05:30 jdbc[83]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.438707+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.440707+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.443710+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.445704+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.447706+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.449704+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:40:57.452706+05:30 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.228772+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.230774+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.231779+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.232774+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.233772+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.234773+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:06.235775+05:30 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.078429+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.079430+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.081431+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.083432+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.085431+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.087431+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:13.088433+05:30 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.881548+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.883546+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.885547+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.886546+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.889546+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.892547+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:41:22.894550+05:30 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.707190+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.709194+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.710189+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.712189+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.714190+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.715190+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:43:19.717190+05:30 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.868899+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.872900+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.872900+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.874902+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.876904+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.878900+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:07.881902+05:30 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.864998+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.866004+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.868998+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.870998+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.871999+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.874000+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:25.874998+05:30 jdbc[153]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.469555+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.471554+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.475557+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.479555+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.482555+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.484555+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:33.486554+05:30 jdbc[163]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.321374+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.324374+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.326372+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.328374+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.329373+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.332373+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:41.337375+05:30 jdbc[173]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.448792+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.450793+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.451794+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.452792+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.454791+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.455793+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:44:58.457793+05:30 jdbc[183]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:07.999796+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.000765+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.001768+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.003765+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.004766+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.006764+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:08.007764+05:30 jdbc[193]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.548884+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.549883+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.550883+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.551900+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.552888+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.553889+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:45:15.554886+05:30 jdbc[203]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.262236+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.264236+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.265237+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.267236+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.269238+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.271238+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:14.272239+05:30 jdbc[213]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.165131+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ANSWERS" already exists; SQL statement:
+create global temporary table HTE_quiz_answers(display_order integer, is_correct boolean, rn_ integer not null, version integer, id bigint, question_id bigint, answer_text varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.166131+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_STUDENT_PROFILES" already exists; SQL statement:
+create global temporary table HTE_student_profiles(date_of_birth date, grade_level integer, rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.167136+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_TEACHER_PROFILES" already exists; SQL statement:
+create global temporary table HTE_teacher_profiles(rn_ integer not null, version integer, id bigint, user_id bigint, first_name varchar(255), last_name varchar(255), subject_area varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.168169+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_USERS" already exists; SQL statement:
+create global temporary table HTE_users(rn_ integer not null, version integer, created_at timestamp(6), id bigint, email varchar(255), password varchar(255), username varchar(255), role enum ('ADMIN','STUDENT','TEACHER'), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.169132+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_ATTEMPTS" already exists; SQL statement:
+create global temporary table HTE_quiz_attempts(is_completed boolean, rn_ integer not null, score integer, version integer, completion_time timestamp(6), id bigint, quiz_id bigint, start_time timestamp(6), student_id bigint, primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.171131+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZZES" already exists; SQL statement:
+create global temporary table HTE_quizzes(duration_minutes integer, is_active boolean, rn_ integer not null, version integer, created_at timestamp(6), created_by bigint, id bigint, description varchar(255), title varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
+2025-04-28 23:48:21.173134+05:30 jdbc[223]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_QUIZ_QUESTIONS" already exists; SQL statement:
+create global temporary table HTE_quiz_questions(points integer, rn_ integer not null, version integer, id bigint, quiz_id bigint, correct_answer varchar(255), question_text varchar(255), question_type varchar(255), primary key (rn_)) TRANSACTIONAL [42101-232]
